@@ -1,0 +1,13 @@
+{
+  "modInfo": {
+    "name": "JailMP",
+    "poster": "./poster.png",
+    "description": "JailMP",
+    "id": "jailmp",
+    "url": "https://www.fetz.dev,"
+  },
+  "modelsDir": "./src/models",
+  "texturesDir": "./src/textures",
+  "soundDir": "./src/sound",
+  "scriptsDir": "./src/scripts"
+}

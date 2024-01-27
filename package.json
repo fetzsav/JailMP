@@ -1,0 +1,57 @@
+{
+  "name": "JailMP",
+  "version": "1.0.0",
+  "description": "",
+  "watch": {
+    "compile": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,js,jsx,lua,json"
+    }
+  },
+  "scripts": {
+    "compile": "tstl",
+    "clean": "del-cli dist",
+    "check": "prettier --check . && eslint .",
+    "lint": "prettier --write . && eslint .",
+    "watch": "tstl --watch --outDir ~/Zomboid/mods"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asledgehammer/PipeWrench-Template.git"
+  },
+  "keywords": [
+    "zomboid_lua_test"
+  ],
+  "author": "asledgehammer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asledgehammer/ZomboidTypeScriptModTemplate/issues"
+  },
+  "homepage": "https://github.com/asledgehammer/ZomboidTypeScriptModTemplate.git#readme",
+  "devDependencies": {
+    "@asledgehammer/tstl-pipewrench": "^0.0.15",
+    "@types/fs-extra": "^9.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "del-cli": "^5.0.0",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "npm-watch": "^0.11.0",
+    "prettier": "^2.7.1",
+    "prettier-eslint": "^15.0.1",
+    "ts-node": "^10.9.1",
+    "lua-types": "^2.13.1",
+    "typescript": "^4.9.4",
+    "typescript-to-lua": "^1.11.1"
+  },
+  "dependencies": {
+    "@asledgehammer/pipewrench": "^41.73.21",
+    "@asledgehammer/pipewrench-events": "^41.73.0",
+    "fs-extra": "^10.1.0"
+  }
+}

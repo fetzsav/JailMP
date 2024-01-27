@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "target": "ESNext",
+    "types": [
+      "lua-types/5.1",
+      "@asledgehammer/pipewrench",
+      "@asledgehammer/pipewrench-events"
+    ]
+  },
+  "tstl": {
+    "luaLibImport": "require",
+    "noHeader": true,
+    "tstlVerbose": false,
+    "luaPlugins": [
+      {
+        "name": "@asledgehammer/tstl-pipewrench"
+      }
+    ]
+  },
+  "include": ["src"]
+}
